@@ -1,0 +1,21 @@
+/* styles.css */
+
+.flash-message {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style for success messages */
+.flash-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Style for error messages */
+.flash-error {
+    background-color: #f44336;
+    color: white;
+}
+

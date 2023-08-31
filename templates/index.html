@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Fitraka Application</title>
+
+    <!-- Link to your external CSS stylesheet -->
+   <style>
+        /* Inline CSS styles here (if needed) */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('{{ url_for('static', filename='images/hero_image.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Content aligns to the top */
+            align-items: flex-end; /* Content aligns to the right */
+            height: 100vh;
+            position: relative; /* Added relative positioning for absolute elements */
+        }
+
+        .welcome-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* Apply the same background style as the body */
+            background-image: url('{{ url_for('static', filename='images/hero_image.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Login and Sign-up form in the top right corner */
+        .login-signup-form {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* How This App Works section in the bottom right corner */
+        .how-it-works {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        /* Sign-in and Sign-up form labels in the same horizontal line */
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0; /* Added margin to separate form groups */
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            padding: 5px;
+        }
+
+        .form-group button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-container">
+            <!-- Login and Sign-up Form -->
+            <div class="login-signup-form">
+                <form action="{{ url_for('login.login') }}" method="POST">
+                    <h3>Login</h3>
+                    <div class="form-group">
+                        <label for="username_or_email">Username or Email:</label>
+                        <input type="text" id="username_or_email" name="username_or_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+
+                <form action="{{ url_for('register.register') }}" method="POST">
+                    <h3>Sign Up</h3>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- How This App Works Feature -->
+            <div class="how-it-works">
+                <h3>How This App Works</h3>
+                <p>Welcome to Fitraka, your personal fitness tracking app! With Fitraka, you can:</p>
+                <ul>
+                    <li>Set and achieve fitness goals.</li>
+                    <li>Track your workouts and progress.</li>
+                    <li>Get personalized workout plans.</li>
+                    <li>Connect with a community of fitness enthusiasts.</li>
+                </ul>
+                <p>Join us today and start your journey towards a healthier you!</p>
+            </div>
+
+            <h2>Welcome to Fitraka Application</h2>
+        </div>
+    </div>
+</body>
+</html>
+
