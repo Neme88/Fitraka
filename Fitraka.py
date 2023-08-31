@@ -28,18 +28,18 @@ def load_user(user_id):
 
 
 def create_app():
-    Fitraka_Project = Flask(__name__)
-    Fitraka_Project.config.from_object(Config)
+    Fitraka = Flask(__name__)
+    Fitraka.config.from_object(Config)
 
     # Initialize extensions with the app
     #db.init_app(app)
     #migrate.init_app(app, db)
-    login_manager.init_app(Fitraka_Project)
+    login_manager.init_app(Fitraka)
 
-    Fitraka_Project.config['USER_CREDENTIALS_FILE_PATH'] = USER_CREDENTIALS_FILE_PATH
+    Fitraka.config['USER_CREDENTIALS_FILE_PATH'] = USER_CREDENTIALS_FILE_PATH
 
     # Enable CORS (Cross-Origin Resource Sharing)
-    CORS(Fitraka_Project)
+    CORS(Fitraka)
 
     # Import and register route blueprints
     from routes.landing_route import landing_bp
@@ -54,19 +54,19 @@ def create_app():
     from routes.track_exercise_route import track_exercise_bp
 
     # Blueprint registeration
-    Fitraka_Project.register_blueprint(landing_bp)
-    Fitraka_Project.register_blueprint(register_bp)
-    Fitraka_Project.register_blueprint(login_bp)
-    Fitraka_Project.register_blueprint(logout_bp)
-    Fitraka_Project.register_blueprint(dashboard_bp)
-    Fitraka_Project.register_blueprint(profile_bp)
-    Fitraka_Project.register_blueprint(exercise_bp)
-    Fitraka_Project.register_blueprint(goal_routes_bp)
-    Fitraka_Project.register_blueprint(exercise_result_bp)
-    Fitraka_Project.register_blueprint(track_exercise_bp)
+    Fitraka.register_blueprint(landing_bp)
+    Fitraka.register_blueprint(register_bp)
+    Fitraka.register_blueprint(login_bp)
+    Fitraka.register_blueprint(logout_bp)
+    Fitraka.register_blueprint(dashboard_bp)
+    Fitraka.register_blueprint(profile_bp)
+    Fitraka.register_blueprint(exercise_bp)
+    Fitraka.register_blueprint(goal_routes_bp)
+    Fitraka.register_blueprint(exercise_result_bp)
+    Fitraka.register_blueprint(track_exercise_bp)
 
 
-    return Fitraka_Project
+    return Fitraka
 """
 # Example password hashing
 user_password = input ("Enter your password: ")
@@ -79,5 +79,5 @@ else:
     print("Password is invalid")
 """
 # Initialize the app with your configuration class
-Fitraka_Project = create_app()
+Fitraka = create_app()
 
