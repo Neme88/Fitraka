@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Fitraka Application</title>
-
-    <!-- Link to your external CSS stylesheet -->
-   <style>
+    <style>
         /* Inline CSS styles here (if needed) */
         body {
             margin: 0;
@@ -22,10 +20,10 @@
         .container {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Content aligns to the top */
-            align-items: flex-end; /* Content aligns to the right */
+            justify-content: flex-start;
+            align-items: flex-end;
             height: 100vh;
-            position: relative; /* Added relative positioning for absolute elements */
+            position: relative;
         }
 
         .welcome-container {
@@ -36,21 +34,18 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            /* Apply the same background style as the body */
             background-image: url('{{ url_for('static', filename='images/hero_image.png') }}');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
 
-        /* Login and Sign-up form in the top right corner */
         .login-signup-form {
             position: absolute;
             top: 20px;
             right: 20px;
         }
 
-        /* How This App Works section in the bottom right corner */
         .how-it-works {
             background: rgba(255, 255, 255, 0.8);
             padding: 20px;
@@ -63,11 +58,10 @@
             right: 20px;
         }
 
-        /* Sign-in and Sign-up form labels in the same horizontal line */
         .form-group {
             display: flex;
             flex-direction: column;
-            margin: 10px 0; /* Added margin to separate form groups */
+            margin: 10px 0;
         }
 
         .form-group label {
@@ -80,6 +74,24 @@
 
         .form-group button {
             padding: 5px 10px;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .container {
+                justify-content: center;
+            }
+
+            .welcome-container {
+                max-width: 80%;
+                padding: 10px;
+            }
+
+            .login-signup-form,
+            .how-it-works {
+                position: static;
+                margin-top: 20px;
+            }
         }
     </style>
 </head>
