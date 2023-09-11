@@ -8,7 +8,7 @@ logout_bp = Blueprint('logout', __name__)
 
 # Define the logout route
 @logout_bp.route('/logout')
-@login_required
+# @login_required
 def logout():
     logout_user()
     flash("Logout successful!", 'success')

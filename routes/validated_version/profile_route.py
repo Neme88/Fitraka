@@ -5,7 +5,7 @@ from flask_login import login_required, current_user
 profile_bp = Blueprint('profile', __name__)
 
 @profile_bp.route('/profile', methods=['GET', 'POST'])
-# @login_required
+@login_required
 def profile():
     if request.method == 'POST':
         data = request.form

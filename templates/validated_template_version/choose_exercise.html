@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Exercise</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='Fitraka/app/static/css/styles.css') }}">
+</head>
+<body>
+    <!-- Display the list of available exercises -->
+    <h1>Choose an Exercise</h1>
+    <ul>
+        {% for exercise in exercises %}
+            <li>{{ exercise }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

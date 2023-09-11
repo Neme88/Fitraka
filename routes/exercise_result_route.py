@@ -24,7 +24,7 @@ def exercise_result(exercise, duration):
         else:
             # Handle the case where the exercise is not in the MET values dictionary
             flash("Exercise not found in MET values.", 'error')
-            return redirect(url_for('choose_exercise.choose_exercises'))
+            return redirect(url_for('choose_exercise.choose_exercise'))
 
         # Pass the calories_burned value to the track_exercise route
         return redirect(url_for('track_exercise.track_exercise', exercise=exercise, duration=duration, calories_burned=calories_burned))
@@ -32,11 +32,11 @@ def exercise_result(exercise, duration):
     except ValueError:
         # Handle the case where duration is not a valid float
         flash("Invalid duration value. Please enter a valid number.", 'error')
-        return redirect(url_for('choose_exercise.choose_exercises'))
+        return redirect(url_for('choose_exercise.choose_exercise'))
 
     except Exception as e:
         # Handle other exceptions if needed
         flash(f"An error occurred: {str(e)}", 'error')
-        return redirect(url_for('choose_exercise.choose_exercises'))
+        return redirect(url_for('choose_exercise.choose_exercise'))
 
 

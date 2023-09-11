@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitraka - Set Fitness Goal</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Fitraka/app/static/css/style.css') }}">
+</head>
+<body>
+    <h1>Set Your Fitness Goal</h1>
+    <form method="POST">
+        <label for="goal">Choose a fitness goal:</label>
+        <select name="goal" id="goal">
+            {% for goal in goals %}
+                <option value="{{ goal }}">{{ goal.capitalize() }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Set Goal</button>
+    </form>
+</body>
+</html>
+

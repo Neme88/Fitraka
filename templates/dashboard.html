@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <!-- Link to your external CSS stylesheet -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Fitraka/app/static/css/style.css') }}">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Use relative paths for background image */
+            background-image: url("static/images/hero_image_dash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        section {
+            padding: 20px;
+            text-align: left;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 40%; /* Reduced width by 50% */
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            /* Adjust width for smaller screens */
+            section {
+                width: 100%; 
+            }
+            .mobile-resize {
+                max-width: 50%;
+            }
+        }
+        /* Background Image Section */
+        .cover-image {
+            /* Add your cover image here using background-image */
+            background-image: url("static/images/");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px; /* Adjust the height as needed */
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to the Dashboard</h1>
@@ -15,9 +82,7 @@
         {% endfor %}
     </ul>
     <!-- Add a Logout link -->
-    <a href="{{ url_for('logout') }}">Logout</a>
+    <a href="{{ url_for('logout.logout') }}">Logout</a>
 </body>
 </html>
-
-
 

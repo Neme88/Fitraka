@@ -2,17 +2,97 @@
 <html>
 <head>
     <title>Choose Exercise</title>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='Fitraka/app/static/css/styles.css') }}">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Use relative paths for background image */
+            background-image: url("static/images/hero_image_dash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        section {
+            padding: 20px;
+            text-align: right;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 40%; /* Reduced width by 50% */
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            /* Adjust width for smaller screens */
+            section {
+                width: 100%; 
+            }
+            .mobile-resize {
+                max-width: 50%;
+            }
+        }
+        /* Background Image Section */
+        .cover-image {
+            /* Add your cover image here using background-image */
+            background-image: url("static/images/");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px; /* Adjust the height as needed */
+        }
+        /* Custom Styles for Dropdown List */
+        select#exercise-dropdown {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: blue; /* Change text color to blue */
+        }
+    </style>
 </head>
 <body>
-    <!-- Display the list of available exercises -->
-    <h1>Choose an Exercise</h1>
-    <ul>
-        {% for exercise in exercises %}
-            <li>{{ exercise }}</li>
-        {% endfor %}
-    </ul>
+    <!-- Display the dropdown list of available exercises -->
+    <section>
+        <h1>Choose an Exercise</h1>
+        <form action="/exercise_result" method="get">
+            <select name="exercise" id="exercise-dropdown">
+                {% for exercise in exercises %}
+                    <option value="{{ exercise }}">{{ exercise }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <input type="submit" value="Start Exercise" class="btn">
+        </form>
+    </section>
 </body>
 </html>
 

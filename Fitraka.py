@@ -36,6 +36,10 @@ def create_app():
     #migrate.init_app(app, db)
     login_manager.init_app(Fitraka)
 
+
+    # Configuration option to control validation (True for validation required, False to bypass validation)
+    Fitraka.config['VALIDATION_REQUIRED'] = True  # Change to True for validation required
+
     Fitraka.config['USER_CREDENTIALS_FILE_PATH'] = USER_CREDENTIALS_FILE_PATH
 
     # Enable CORS (Cross-Origin Resource Sharing)
