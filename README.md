@@ -3,12 +3,16 @@ Overview of the Fitraka Fitness Tracking Application.
 Fitraka Fitness Tracking Application is an all-inclusive fitness management system designed to assist individuals of all fitness levels in achieving their health and fitness objectives. This README contains installation instructions for the application as well as a list of its dependencies and their versions.
 
 Equipped with
-Create a personalised account to gain access to all of the app's features.
+Create a personalized account to gain access to all of the app's features.
 Set and monitor your fitness objectives, whether they involve weight loss, muscle gain, or general fitness improvement.
 Log your daily routines, including exercises, sets, repetitions, and weights.
 To manage your nutrition, track your daily caloric intake and maintain a food journal.
 Community Assistance: Join a group of like-minded fitness enthusiasts for support and motivation.
 View comprehensive reports and statistics to evaluate your progress.
+![first Screenshot of my app](https://github.com/Neme88/Fitraka/blob/main/Screenshot%20from%202023-09-13%2000-28-41.png)
+![Second Screenshot of my app](https://github.com/Neme88/Fitraka/blob/main/Screenshot%20from%202023-09-13%2000-32-21.png)
+![Third Screenshot of my app](https://github.com/Neme88/Fitraka/blob/main/Screenshot%20from%202023-09-13%2000-33-33.png)
+
 Setting up
 To install and activate the Fitness Tracking Application, follow these steps:
 
