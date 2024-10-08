@@ -22,7 +22,7 @@ This application is euipped to perform the following task.
     git clone https://github.com/Neme88/Fitraka.git
     cd Fitraka
   2. ### Create a virtual Development environment:
-  #### To isolate your current project repo from other repos and directories in you local machine that way your dependecies will solely be for the project.and it helps avoid clutter.
+     ####To isolate your current project repo from other repos and directories in you local machine that way your dependecies will solely be for the project.and it helps avoid clutter.
 
   For windows OS.
 
