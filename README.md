@@ -16,8 +16,17 @@ This application is euipped to perform the following task.
 - pip
 
 ## Installation
-  1. ### clone the repository:
+
+  1. ### Clone the repository:
 
     git clone https://github.com/Neme88/Fitraka.git
     cd Fitraka
+  2. ### Create a virtual Development environment:
 
+  For windows OS.
+
+      venvScriptsactivate
+
+  For Linux and MacOS.
+
+      venv/bin/activate
