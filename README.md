@@ -74,8 +74,24 @@ Start the application locally by executing
         
     flask run
 
+Once the server is running, you can access the application by navigating to http://localhost:5000 in your browswe.
 
+### Dependencies
 
+The Fitraka Fitness Tracking Application relies on the following Python packages:
 
-
-
+- charset-normalizer==2.0.12
+- click==8.1.7
+- contourpy==1.1.0
+- cycler==0.11.0
+- dominate==2.8.0
+- Flask==2.0.1
+- Flask-Cors==4.0.0
+- Flask-Login==0.6.0
+- Flask-Mail==0.9.1
+- Flask-Migrate==3.1.0
+- Flask-MySQLdb==0.2.0
+- Flask-RESTful==0.3.9
+- Flask-SQLAlchemy==2.5.1
+- Flask-Uploads==0.2.1
+- Flask-WTF==0.15.1
