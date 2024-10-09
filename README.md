@@ -95,3 +95,28 @@ The Fitraka Fitness Tracking Application relies on the following Python packages
 - Flask-SQLAlchemy==2.5.1
 - Flask-Uploads==0.2.1
 - Flask-WTF==0.15.1
+
+### Known Issues
+- Users may encounter issues with the database migration on certain setups.
+- Some users have reported intermittent issues with session management when using the Flask-Login module.
+
+### Contributing
+
+We welcome contributions from the community to improve the application. To contribute:
+
+- Fork the repository.
+- Create a new branch for your feature or fix.
+- Submit a pull request with a detailed explanation of your changes.
+
+Please make sure your contributions align with the project's overall goals.
+
+### License
+
+This project is open-source and available under the MIT License. See the LICENSE file for more information.
+
+### Author
+**Chinemerem .C.Nwaka**
+**Email: ccnwaka1988@gmail.com**
+**Linkedin: https://www.linkedin.com/in/chinemerem-c-nwaka/**
+**GitHub: https://github.com/Neme88**
+
