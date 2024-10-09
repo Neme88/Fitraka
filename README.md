@@ -118,5 +118,5 @@ This project is open-source and available under the MIT License. See the LICENSE
 **Chinemerem .C.Nwaka**
 - **Email: ccnwaka1988@gmail.com**
 - **Linkedin: https://www.linkedin.com/in/Neme88/**
-- **GitHub: https://github.com/Neme**
+- **GitHub: https://github.com/Neme88**
 - **X: https://x.com/Neme_88**
