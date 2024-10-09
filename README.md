@@ -1,19 +1,34 @@
-## Application Overview.
-Fitraka Fitness Tracking Application is an all-inclusive fitness management system designed to assist individuals of all fitness levels in achieving their health and fitness objectives. This README contains installation instructions for the application as well as a list of its dependencies and their versions.
-## what this Application can do.
+## Fitraka Fitness Tracking Application.
+**Fitraka Fitness Tracking Applicatian** is an all-inclusive fitness management system designed to assist individuals of all fitness levels in achieving their health and fitness objectives.
 
-This application is euipped to perform the following task.
+## Table of contents
+- Overview
+- Features
+- Installation
+- Configuration
+- Usage
+- Dependencies
+- Known Issues
+- Contributing
+- License
+- Author
 
-- User can create personalized account to gain all accessto of all the app's feature
-- User can set objective and monitor their routine to achieve that objective.
-- User can set and monitor their nutrition and get remianders.
-- User can track their daily caloric intake and maintain a food journal.
-- User can join community of like minded fitness enthusiasts for support and motivation.
-- User can view comprehensive reports and statistics to evauate their progress.
---
-## Prerequisites
-- Python 3.8x
-- pip
+## Overview
+
+Fitraka is an open-source fitness tracking application aimed at helping individuals monitor and enhance their fitness journey. It offers personalized fitness and nutrition management, progress tracking, and community support to motivate users toward achieving their health goals.
+
+## Features
+- **Personalized Accounts:** Create an account to access all app features and set personalized goals.
+- **Fitness Goal Tracking:** Track fitness objectives like weight loss, muscle gain, or overall fitness improvement.
+- **Workout Logging:** Log daily routines, including exercises, sets, reps, and weights.
+- **Nutrition Management:** Track caloric intake and maintain a food journal to manage your nutrition.
+- **Community Support:** Engage with a community of fitness enthusiasts for motivation and advice.
+- **Progress Reports:** View comprehensive reports and statistics to track and assess your progress over time.
+## Installation
+### Prerequisites
+Ensure the following prerequisites are met:
+- **Python** 3.8 or higher is installed.
+- **pip,** the Python package manager, is available.
 
 ## Installation
 
