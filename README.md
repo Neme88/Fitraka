@@ -45,11 +45,12 @@ Ensure the following prerequisites are met:
         virtual venv
 
   4. ### Activate the virtual environment:
-    - on windows OS.
+  
+  - on windows OS.
         
         venv\Scripts\activate
 
-    - On macOS/Linux
+  - On macOS/Linux
       
         source venv/bin/activate
   
@@ -58,8 +59,21 @@ Ensure the following prerequisites are met:
         pip install -r requirements.txt
 
 ## Configuration
+
 ### Database Setup
+
 To configure the database, run the following commands:
+        
+        flask db init
+        flask db migrate
+        flask db upgrade
+
+### Usage
+
+Start the application locally by executing
+        
+        flask run
+
 
 
 
