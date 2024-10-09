@@ -115,8 +115,8 @@ Please make sure your contributions align with the project's overall goals.
 This project is open-source and available under the MIT License. See the LICENSE file for more information.
 
 ### Author
-**Chinemerem .C.Nwaka**
-**Email: ccnwaka1988@gmail.com**
-**Linkedin: https://www.linkedin.com/in/chinemerem-c-nwaka/**
-**GitHub: https://github.com/Neme88**
+- **Chinemerem .C.Nwaka**
+- **Email: ccnwaka1988@gmail.com**
+- **Linkedin: https://www.linkedin.com/in/chinemerem-c-nwaka/**
+- **GitHub: https://github.com/Neme88**
 
