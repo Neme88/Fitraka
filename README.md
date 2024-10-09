@@ -54,12 +54,12 @@ Ensure the following prerequisites are met:
      source venv/bin/activate
   
 5. ### Install required dependencies:
-
-  pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ## Configuration
 ### Database Setup
 To configure the database, run the following commands:
+
 
 
 
