@@ -117,5 +117,6 @@ This project is open-source and available under the MIT License. See the LICENSE
 ### Author
 **Chinemerem .C.Nwaka**
 - **Email: ccnwaka1988@gmail.com**
-- **Linkedin: https://www.linkedin.com/in/chinemerem-c-nwaka/**
+- **Linkedin: https://www.linkedin.com/in/Neme88/**
 - **GitHub: https://github.com/Neme**
+- **X: https://x.com/Neme_88**
