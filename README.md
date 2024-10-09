@@ -42,19 +42,20 @@ Ensure the following prerequisites are met:
   3. ### Create a virtual Development environment:
      Create a virtual Development environment to isolate your current project repo from other repos and directories in you local machine that way your dependecies will solely be for the project.and it helps avoid clutter.
      
-     virtual venv
+        virtual venv
 
   4. ### Activate the virtual environment:
-  - on windows OS.
-     
-     venv\Scripts\activate
+    - on windows OS.
+        
+        venv\Scripts\activate
 
-  - On macOS/Linux
-     
-     source venv/bin/activate
+    - On macOS/Linux
+      
+        source venv/bin/activate
   
 5. ### Install required dependencies:
-    pip install -r requirements.txt
+        
+        pip install -r requirements.txt
 
 ## Configuration
 ### Database Setup
