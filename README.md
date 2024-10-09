@@ -30,19 +30,35 @@ Ensure the following prerequisites are met:
 - **Python** 3.8 or higher is installed.
 - **pip,** the Python package manager, is available.
 
-## Installation
+## Installation Steps
 
   1. ### Clone the repository:
 
     git clone https://github.com/Neme88/Fitraka.git
+    
+  2. ### Navigate to the project directory:
     cd Fitraka
-  2. ### Create a virtual Development environment:
-     To isolate your current project repo from other repos and directories in you local machine that way your dependecies will solely be for the project.and it helps avoid clutter.
 
-  For windows OS.
+  3. ### Create a virtual Development environment:
+     Create a virtual Development environment to isolate your current project repo from other repos and directories in you local machine that way your dependecies will solely be for the project.and it helps avoid clutter.
+     virtual venv
+  4. ### Activate the virtual environment:
+  - on windows OS.
 
-      venvScriptsactivate
+    venv\Scripts\activate
 
-  For Linux and MacOS.
+  - On macOS/Linux
 
-      venv/bin/activate
+    source venv/bin/activate
+  
+5. ### Install required dependencies:
+
+  pip install -r requirements.txt
+
+## Configuration
+### Database Setup
+To configure the database, run the following commands:
+
+
+
+
