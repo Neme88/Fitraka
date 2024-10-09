@@ -64,15 +64,15 @@ Ensure the following prerequisites are met:
 
 To configure the database, run the following commands:
         
-        flask db init
-        flask db migrate
-        flask db upgrade
+    flask db init
+    flask db migrate
+    flask db upgrade
 
 ### Usage
 
 Start the application locally by executing
         
-        flask run
+    flask run
 
 
 
